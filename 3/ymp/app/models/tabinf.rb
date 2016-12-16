@@ -1,0 +1,2 @@
+class Tabinf < ApplicationRecord
+end

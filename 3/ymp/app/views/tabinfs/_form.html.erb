@@ -1,0 +1,47 @@
+<%= form_for(tabinf) do |f| %>
+  <% if tabinf.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(tabinf.errors.count, "error") %> prohibited this tabinf from being saved:</h2>
+
+      <ul>
+      <% tabinf.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :fio %>
+    <%= f.text_area :fio %>
+  </div>
+
+  <div class="field">
+    <%= f.label :address %>
+    <%= f.text_area :address %>
+  </div>
+
+  <div class="field">
+    <%= f.label :ntel %>
+    <%= f.text_area :ntel %>
+  </div>
+
+  <div class="field">
+    <%= f.label :sex %>
+    <%= f.text_field :sex %>
+  </div>
+
+  <div class="field">
+    <%= f.label :datro %>
+    <%= f.date_select :datro %>
+  </div>
+
+  <div class="field">
+    <%= f.label :mestoro %>
+    <%= f.text_area :mestoro %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

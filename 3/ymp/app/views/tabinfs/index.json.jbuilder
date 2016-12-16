@@ -1,0 +1,1 @@
+json.array! @tabinfs, partial: 'tabinfs/tabinf', as: :tabinf

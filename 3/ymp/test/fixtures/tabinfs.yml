@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  fio: MyText
+  address: MyText
+  ntel: MyText
+  sex: MyString
+  datro: 2016-12-09
+  mestoro: MyText
+
+two:
+  fio: MyText
+  address: MyText
+  ntel: MyText
+  sex: MyString
+  datro: 2016-12-09
+  mestoro: MyText

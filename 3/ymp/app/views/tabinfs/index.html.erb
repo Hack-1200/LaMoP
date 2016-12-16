@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+
+
+<h1>Tabinfs</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Fio</th>
+      <th>Address</th>
+      <th>Ntel</th>
+      <th>Sex</th>
+      <th>Datro</th>
+      <th>Mestoro</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @tabinfs.each do |tabinf| %>
+      <tr>
+        <td><%= tabinf.fio %></td>
+        <td><%= tabinf.address %></td>
+        <td><%= tabinf.ntel %></td>
+        <td><%= tabinf.sex %></td>
+        <td><%= tabinf.datro %></td>
+        <td><%= tabinf.mestoro %></td>
+        <td><%= link_to 'Show', tabinf %></td>
+        <td><%= link_to 'Edit', edit_tabinf_path(tabinf) %></td>
+        <td><%= link_to 'Destroy', tabinf, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Tabinf', new_tabinf_path %>

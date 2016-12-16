@@ -1,0 +1,1 @@
+json.partial! "tabinfs/tabinf", tabinf: @tabinf
